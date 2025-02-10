@@ -7,11 +7,7 @@
     <link rel="stylesheet" href="sentient.css">
     <link rel="stylesheet" href="style.css">
     <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+  
 
         body {
             font-family: 'Sentient', sans-serif;
@@ -22,8 +18,10 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            /*overflow-x: hidden;*/
+            max-width: 100vw;
             overflow-x: hidden;
-            max-width: 100%;
+            justify-content: center;
         }
 
         .regular-text {
@@ -59,19 +57,20 @@
             height: 20.96cm;
             margin: 0;
             padding: 1.2cm 1.2cm 1.2cm 1.2cm;*/
-            width: 90vw;  /* 自适应宽度 */
+            width: min(90%, 800px);  /* 自适应宽度 */
             max-width: 800px; /* 在大屏幕上限制最大宽度 */
+            overflow-wrap: break-word; 
             background-color: white;
             display: flex;
             flex-direction: column; 
             padding: 5%;
-            margin-bottom: 20px;
+            margin: 20px auto;
+            box-sizing: border-box;
         }
 
         .page img {
             max-width: 100%;
             height: auto;
-            margin-bottom: 15px;
             display: block;
         }
 
@@ -90,13 +89,13 @@
         }
 
        /* 小屏幕（手机） */
-       @media (max-width: 767px) {  /* iPhone 14 Pro 宽度 */
+       @media (max-width: 767px) {  
             .page {
                 width: 100%;
                 padding: 8%;
             }
             .text {
-                font-size: 0.9rem; /* 字体略小，适应手机 */
+                font-size: 0.9rem; 
             }
         }
 
