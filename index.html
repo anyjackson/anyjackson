@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GOARWYWASWYT</title>
     <link rel="stylesheet" href="sentient.css">
+    <link rel="stylesheet" href="style.css">
     <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
         body {
             font-family: 'Sentient', sans-serif;
             /*background-color: #f8f8f8;*/
@@ -15,6 +22,8 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            overflow-x: hidden;
+            max-width: 100%;
         }
 
         .regular-text {
@@ -46,24 +55,28 @@
         }
 
         .page {
-            width: 13.34cm;
+            /*width: 13.34cm;
             height: 20.96cm;
-            background-color: white;
             margin: 0;
-            padding: 1.2cm 1.2cm 1.2cm 1.2cm;
-            /*box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);*/
+            padding: 1.2cm 1.2cm 1.2cm 1.2cm;*/
+            width: 90vw;  /* 自适应宽度 */
+            max-width: 800px; /* 在大屏幕上限制最大宽度 */
+            background-color: white;
             display: flex;
             flex-direction: column; 
+            padding: 5%;
+            margin-bottom: 20px;
         }
 
         .page img {
             max-width: 100%;
             height: auto;
             margin-bottom: 15px;
+            display: block;
         }
 
         .text {
-            font-size: 15px;
+            font-size: 1rem;
             white-space: pre-line; /* 保留换行 */
             line-height: 1.3;
             margin: 0;
@@ -72,8 +85,39 @@
         .bold-black-text {
             font-family: 'Sentient', sans-serif;
             font-weight: bold;
-            font-size: 15px;
+            font-size: 1rem;
             color: black;
+        }
+
+       /* 小屏幕（手机） */
+       @media (max-width: 767px) {  /* iPhone 14 Pro 宽度 */
+            .page {
+                width: 100%;
+                padding: 8%;
+            }
+            .text {
+                font-size: 0.9rem; /* 字体略小，适应手机 */
+            }
+        }
+
+        /* 中等屏幕（平板） */
+        @media (min-width: 768px) and (max-width: 1199px) {
+            .page {
+                width: 90%;
+            }
+            .text {
+                font-size: 1rem;
+            }
+        }
+
+        /* 大屏幕（桌面） */
+        @media (min-width: 1200px) {
+            .page {
+                max-width: 80%;
+            }
+            .text {
+                font-size: 1.1rem;
+            }
         }
     </style>
 </head>
@@ -275,36 +319,7 @@
     </div>
 
     <div class="page">
-      <p class="text"><img src="images/img10.jpg" alt="示例图片" style="width: 30px; height: auto; position: relative;"> the 1
-
-        there is no chance a feeling is stupid --
-        but it’s not my , not the .
-
-
-
-        here,
-        not everything, just enough to fracture.
-
-        writing lessons:
-        structures explained to “child-myself.”
-        romantic style from Disney-princesses?
-
-
-
-        rethinking my head: a conversation where fear is shown
-
-
-        &lt;unseen trashcans I’m searching— am I too personal?&gt;
-
-        
-        :):(:0
-        in between two B sentences—
-        thoughts pulled from a diary.
-
-        Is it about a structure of rethinking,
-        being built up,
-        learning by reading
-        some thing :=0</p>
+      <p class="text"><img src="images/img.jpg" alt="示例图片" style="width: 30px; height: auto; position: relative;"></p>
     </div>
 
     <div class="page">
@@ -418,11 +433,755 @@
     </div>
 
     <div class="page">
-      <img src="images/img91.jpg" alt="示例图片">
+      <img src="images/img9-1.jpg" alt="示例图片">
     </div>
 
     <div class="page">
-      <img src="images/img7.jpg" alt="示例图片">
+      <img src="images/img8.jpg" alt="示例图片">
+    </div>
+
+    <div class="page">
+      <p class="text"><span class=" bold-black-text">Irgendwann</span>
+
+        <span class="italic-text"> para responder
+        escribir para no morir
+        escribir para llevar la contra
+        escribir para estar más cerca del sol
+        escribir para llorar
+        escribir para jugar
+        escribir para tomar café
+        escribir para recordar
+        escribir para no olvidar
+        escribir para caminar
+        escribir para volver a saborear
+        escribir para reinventar
+        escribir para retroceder y observar
+        escribir para escuchar
+        escribir para alimentar
+        escribir para cuestionar
+        escribir para purgar
+        escribir para soñar
+        escribir para sonajear
+        escribir para responder y preguntar de nuevo
+        escribir para reir
+        escribir para bailar
+        escribir para melodiar
+        escribir para aprender
+        escribir para errar
+        escribir para humanizar
+        escribir para empatizar
+        escribir para cantar
+        escribir para extrañar
+        escribir para viajar
+        escribir para entender
+        escribir para recuperar
+        escribir para migrar
+        escribir para imprimir
+        escribir para declarar
+        escribir para saltar
+        escribir para honrar
+        escribir para amar. </span></p>
+    </div>
+
+    <div class="page">
+      <p class="text">It was throwing on the plate with a
+        Slow rush
+        They were away for a bit, when they
+        Were back
+        They still didn’t say anything about
+        This first singular moment only
+
+        This bird was singing
+        I was singing
+
+        Is your mouth opened
+        when you’re showing your tongue?
+        Please be soft
+
+        Don’t walk, don’t stand up, talk when it’s fit
+
+        Not today my baby
+        Don’t say that
+      
+        <img src="images/img9-2.jpg" alt="示例图片">
+      </p>
+    </div>
+
+    <div class="page">
+      <p class="text"><span class="bold-black-text">GARTEN</span>
+
+
+        Para escribir los sonidos de mis recuerdos,
+        Necesitaría silencio.
+        Más bien un escenario vacío.
+
+        Ahí guardo la memoria de mis deseos.
+
+
+        Los olores que emanan de los recuerdos,
+        son por el tacto de la luz del sol.
+
+        Los protagonistas.
+
+        To write the sounds of my memories,
+        I would need silence.
+        Or rather an empty stage.
+
+        There I keep the memory of my desires.
+
+        The smells that emanate from memories,
+        Are from the touch of sunlight. </p>
+    </div>
+
+    <div class="page">
+      <p class="text">the mud gave us form
+        from the bottom of the waters came our matter
+        But we won’t forget:
+        we are only borrowers.
+        One day we must return to her
+        for she wants back what is hers.
+        we did not come from the rib of a man
+        but the hands of a woman </p>
+    </div>
+
+    <div class="page">
+      <p class="text">I remember when I was a little girl, my grandmother used
+        to take me to Seu Antônio.
+        The children would sit in the little chairs lined up, waiting
+        for their turn.
+        To this day I remember the smell of that little house.
+        Seu Antônio would call us when it was time.
+        I would sit in the chair opposite the old man’s
+        And with his warm hands, already wrinkled from age
+        he would bless
+        take away evil
+        open paths
+        and protect.
+        Long live Seu Antônio
+        and the elders who devote their lives protecting and
+        blessing.
+        Long live the guardians, healers and benzedeiros who
+        protect the children.
+        May they all be guarded and safe.</p>
+    </div>
+
+    <div class="page">
+      <img src="images/img10.jpg" alt="示例图片">
+    </div>
+
+    <div class="page">
+      <img src="images/img11.jpg" alt="示例图片">
+    </div>
+
+    <div class="page">
+      <p class="text"><span class="bold-black-text">Weiße Schweine</span>
+
+
+        Will unser bleicher Meister
+        die Sonne der Welt aussähen,
+        zerknüllen, und sich einsetzen,
+        gelb verdickte Krallen, um sie
+        ergreifen zu dürfen?
+        Braucht unser bleicher Meister
+        so viel Untertan-Material,
+        die ihm bedienstet
+        Hühnerherzen
+        und Affenhirne
+        servieren,
+        seine Augen mit
+        Schmeichel umsorgen,
+        seine endlose Zunge
+        füttern mit Überfluss und
+        Dekadenz?
+        Wird unser bleicher Meister
+        schwer atmen, bis
+        seine Speiseröhre verstopft
+        sein Mund schaumüberquellend
+        sein Magen zur Detonation
+        und sein Fleisch in sich eingesunken
+        ist?
+
+        Natürlich!
+        nicht wie sondern wieviel.</p>
+    </div>
+
+    <div class="page">
+      <p class="text">To write poetry in a hurry
+        and make trees go all blurry
+        somewhere inbetween
+        I will have something to bury.
+
+
+        And if the night decides to be long
+        I might even compose her a song
+        who knows, maybe even two
+        and have life between ping and pong.
+
+
+        Just like destruction of nature
+        one death leads me to paper
+        and in a tender confession I write:
+        names and numbers of minors and majors.
+
+
+        So if evil is lazy
+        you call me crazy
+        soil will remember
+        the scent of a daisy. </p>
+    </div>
+
+    <div class="page">
+      <p class="text"> Our culture is a crossroads culture.
+        It’s alive
+        It is movement
+        Uncertainty
+        Indecency
+        Malandragem
+        Dribbling
+        Cheating
+        Intelligence
+        Astúcia
+        The joy that goes out on the street and ends in sweat.
+        Sweat it all out,
+        A purging ritual
+        and for a moment feel on the skin what freedom is.
+        Freedom, which we only learn by reading in the dictionary.
+        But the street,
+        the sacred street in its great profanity
+        is the temple of freedom.
+        Where the transition between worlds
+        becomes reality.
+
+        The crossroads,
+        a encruzilhada.</p>
+    </div>
+
+    <div class="page">
+      <p class="text"><span class="bold-black-text">Ohne zu vergessen</span>
+
+        Ohne zu vergessen wenn sie gehen
+        Nach Hause zurück
+        Zurück in die Zukunft
+
+        Familien Vereint
+        ohne führer
+        Selber gewählter Weg
+
+        Dahin wo es wächst
+
+        Doch
+
+        Ohne zu vergessen wenn sie gehen
+        Die taten
+        Die Hilfe
+        Die Geschichten
+        Ihre Gesichter
+        Meiner Freunde
+
+        Ohne zu vergessen wenn sie zurückkehren nachhause um
+        die Flucht zur Reise zu machen
+
+        Das leben zu leben
+        Um wieder zu leben
+        Nicht zu fliehen
+
+        Uns hier bleibt uns
+        Was wir gelernt und vergessen werden
+        Woraus wir lernen hätten können
+        Wodurch du und ich etwas verstanden haben
+
+        Das das hier
+        Das wir
+        Privilegiert
+        sind
+        Und noch viel zu lernen haben
+
+        Was wir hätten alles lernen können
+        Ohne zu vergessen wenn sie gehen 
+        </p>
+    </div>
+
+    <div class="page">
+      <p class="text"><span class="bold-black-text">Nov. 30</span>
+
+
+        Ich wollte ein Gedicht schreiben.
+        Ich wollte ein Gedicht schreiben,
+        aber meine Worte stecken.
+
+        Heute gibt es keine Zeit.
+        Keine Zeit zu dekorieren,
+        Keine Zeit für klingende Worte, für verblümten Quatsch.
+
+        Heute gibt es keine Zeit für Kaffee und Kuchen.
+        Keine Zeit, geduldig zu sein,
+        Deine ÄÄHs zu schlucken,
+        Keine Zeit, die großen Kartoffelstücke zu kauen.
+
+        Keine Zeit zu hören,
+        Keine Zeit zu schweigen.
+
+        Mir tut was weh.
+        Eure Vergessen tut weh.
+
+        Wenn ihr mir die Worte versteckt,
+        was ich sehe,
+        was ich fühle,
+        was ich denke.
+        Mir tut eure Vergessen weh.
+        Mir tut im Knie eure Euros weh,
+        Im Nacken eure Algorithmen,
+        Im Kopf eure „Zukunft“.
+
+        Also
+
+        Mir tut weh,
+        wenn ihr schweigt,
+        wenn ihr klagt,
+        wenn ihr auch gar nichts sagt.
+
+        Aber eure Vergessen, das tut mir nicht nur weh.
+        Mir tut auch leid. </p>
+    </div>
+
+    <div class="page">
+      <img src="images/img12.jpg" alt="示例图片">
+    </div>
+
+    <div class="page">
+      <p class="text"><span class="bold-black-text">Unterbewusst</span>
+
+
+        Unter meiner Haut
+        ein Teich der plätschert
+        mein Seelenrand bläht sich auf
+        erquillt bis ans Meeresbett
+        an die Strände junger Tage
+        wo Kinder spielen
+        wo Mütter zu ihren Töchtern werden.
+        Ein einziger Fisch schwamm darin,
+        war Rot gegen das grüne Wasser,
+        auf und ab als kämpfe er gegen
+        den Teich sein Körper. 
+      </p>
+    </div>
+
+    <div class="page">
+      <p class="text"><span class="bold-black-text">Die Reichen</span>
+      
+
+        Sitzen außen
+        in ihrer Habe mumifiziert
+        in den Säften der Jugend -
+        ausgesaugt -
+        badend.
+        Leben unendlich
+        aus ihrem Erbe
+        verleugnen die Natur, die stiehlt
+        jeder ist arm,
+        jeder Knochen ist ausgeliehn.
+
+        Jede Ressource ist begrenzt
+        jedes Bedürfnis ist ewig
+        eher verschlingt man
+        die Welt mit sich,
+        als dass dein Nachbar
+        mehr besitzt.
+      </p>
+    </div>
+
+    <div class="page">
+      <p class="text"><span class="bold-black-text"></span></p>
+    </div>
+
+    <div class="page">
+      <img src="images/img13.jpg" alt="示例图片">
+    </div>
+
+    <div class="page">
+      <p class="text"><span class="bold-black-text">Material</span>
+
+
+        Vernunft verdirbt,
+        sind ein jämmerlich Atom-Gestrick
+        Begrenztes Ich
+        halten Meere aus Galle zurück.
+
+        Die Welt zerfleischt
+        in Ölpest getauft
+        Gamma-Strahlen um dein Augensaum,
+        Speichelbiss, Geißelstich quillt heraus ein warmer
+        Schaum.
+
+        Eingesessene Schöße
+        Aschetod, versunkene Felder ohne Duft
+        blüht nicht, wie es euch beliebt
+        unsre Lungen verschlungen den Rest der Luft </p>
+    </div>
+
+    <div class="page">
+      <p class="text"><span class="bold-black-text">Heidenlandschaf</span>
+
+
+        Ich sehe:
+        wie feuchte, rosa-weiße Blüten,
+        ausatmen und sich strecken
+        und zu einem fließenden Liegebett werden,
+        auf dem Bäume und Sträucher wie
+        türmende Inseln schwimmen
+        und Hügel sich umarmen und
+        Licht scheint durch die pfählernen Bäume
+        wie ein Pfeil.
+
+        Sonne birgt einen fruchtbaren Schaum
+
+        Feigenbäume spucken ihre Nachkommen
+        Kindern süß in den Mund, saufen
+        trocken gespinstigen Saft
+        geflechtet aus dem Licht alter Sterne
+        und dem Wirbel zwischen Werden und Fallen.
+        Man wartet auf jemanden, der
+        einen einspeist
+        im irdischen Bauch, wie
+        Maulwürfe die zwischen Stein und Knochen hausen,
+        bis an die Wurzel des Seins geleitet
+        verschlungen.</p>
+    </div>
+
+    <div class="page">
+      <p class="text"><span class="bold-black-text"></span></p>
+    </div>
+
+    <div class="page">
+      <p class="text"><span class="bold-black-text"></span>
+        tagh, tagh, tagh
+
+        a person enters the room(looking around), not saying a
+        word
+        a week later, moments in between
+
+        asked the room who those two were.
+        how come they left?
+        did you try to convince them to stay a bit longer?
+
+        the room stayed still and left the room</p>
+    </div>
+
+    <div class="page">
+      <img src="images/img14.jpg" alt="示例图片">
+    </div>
+
+    <div class="page">
+      <p class="text"><span class="bold-black-text">Para comenzar</span>
+
+
+        Start with your fingers,
+        move them and send signals to your whole body.
+        You will see your bed move
+        You’ll see your day begin.
+
+
+        Open your eyes slowly
+        enjoy the light passing by
+        Try to wake up with your ears
+        listen to the silent glow of this winter.
+
+
+        Do you still recognise your room?
+        Do you still recognise your body?
+        To cry or having an orgasm is the best warm up to start
+        your day, your dance or your life.
+
+        Start with your fingers,</p>
+    </div>
+
+    <div class="page">
+      <img src="images/img15.jpg" alt="示例图片">
+    </div>
+
+    <div class="page">
+      <p class="text"><span class="bold-black-text"></span>
+        he walked until his feet bled as I was whispering
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;in his left ear of his moldy fears
+        I did recognize my voice no more since I speak
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;in a foreign language
+        tell me all your minor words
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dull, little, worthless words
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; in a language, we both know
+        tell all big words
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;in a language, no one knows</p>
+        <img src="images/img16.jpg" alt="示例图片">
+    </div>
+
+    <div class="page">
+      <p class="text"><span class="bold-black-text"></span>Whispers in plantations
+        No No No No
+        Like or unlike
+        Staying true
+        Staying solitary
+        What is the color of May sunset?
+
+        No anger; No disappointment; No One
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;But what else?
+
+        Paper. A Wall. Floor. An advertisement banner. In-be-
+        tween.
+        Left alone. Many left alone. Words left alone. Words left
+        me alone. I left the words alone.
+        The words do not go there. Little they knew i speak land-
+        scapes
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mountains
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rivers
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;but also, tap water(s)
+
+
+
+        Trouble and care
+        Work and love
+        Run and gain
+        Book and hate
+        Fate and food
+        Flood and mystery
+        Mr. Me and rain
+        Pain and bread
+        Dead and here
+        There and End. </p>
+    </div>
+
+    <div class="page">
+      <p class="text"><span class="bold-black-text">Plenum</span>
+
+
+        (<span class="italic-text">forms / that / can / host / complexity</span>)
+
+        Complexión: “relación de los sistemas orgánicos de
+       cada individuo”
+
+        (for / forms /disform / discomfort)
+
+
+       Lacuna,
+       vacía,
+       un lienzo,
+        tu cama,
+        tu esquina,
+        tu cuna,
+        la mía?
+
+
+        <span class="bold-black-text">How can I live like this?</span>
+
+
+        Mañana:
+        8:30 Yoga
+        9 ducha
+        9:30 collage para objekt werden objekt sein
+        10 desayuno con Elena
+        11 Lago
+        14Circa
+        19terapia
+        21 spülmaschine abholen
+      </p>
+    </div>
+
+    <div class="page">
+      <p class="text">A little poem for our group
+
+        <span class="bold-black-text">Like Water</span>
+
+
+        We come from everywhere.
+        In liquid form,
+        We take the shape of this shared space.
+        As vapor,
+        We rise and gather, clinging to dust,
+        Becoming raindrops of connection.
+        And when the time comes,
+        We scatter,
+        Flying to distant horizons,
+        Each carrying a part of this moment within.</p>
+    </div>
+
+    <div class="page">
+      <img src="images/img17.jpg" alt="示例图片">
+    </div>
+
+    <div class="page">
+      <p class="text"><span class="bold-black-text">Generosidad nov.2024</span>
+      
+      
+        Blando
+        color piel
+        que bueno poder nombrArte
+        o aunque sea, imaginArte.
+
+        
+        “Soft
+        skin-color
+        how good it is to name you
+        or at least imagine you.” </p>
+    </div>
+
+    <div class="page">
+      <p class="text"><span class="bold-black-text">SACHEN MACHEN MACHEN SACHEN 
+      </span>
+
+      Ihr habt meine Hände,
+      aber nicht meine Finger.
+      Ihr wisst nicht, was ich mache,
+      was ich machen kann.
+      was ich Sachen machen,
+      was ich machen Sachen.
+
+
+      Ich spiele
+      Ich singe
+      Von der Weser zur Nordsee.
+      Ich will sagen.
+      Ich will spielen.
+      Ich will Sachen machen,
+      Ich will machen Sachen.
+
+
+      Ich mache Sachen. </p>
+      
+    </div>
+
+    <div class="page">
+      <p class="text"><span class="bold-black-text"></span></p>
+    </div>
+
+    <div class="page">
+      <p class="text"><span class="bold-black-text"></span>I am not mad because you make me look like a tourist,
+        or because our conversations are so easy,
+        or because you never play with language,
+        or because we barely drink water together,
+        or because you reach for cigarettes so silently.
+
+        No, I am not mad because of all these reasons.
+
+        I am mad because you have a calendar hanging in your
+        office. </p>
+    </div>
+
+    <div class="page">
+      <img src="images/img18.jpg" alt="示例图片">
+    </div>
+
+    <div class="page">
+      <p class="text"><span class="bold-black-text"></span></p>
+    </div>
+
+    <div class="page">
+      <img src="images/img19.jpg" alt="示例图片">
+    </div>
+
+    <div class="page">
+      <p class="text"><span class="bold-black-text">collective residue</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <span class="bold-black-text">here to stay</span>
+
+
+        we have knotted ourselves
+        into your fences
+        our feathers ruffled
+        our clothes torn
+        here to stay
+        disbanding your ignorance
+        and dancing on and in
+        and within its ruins
+        its faultlessness
+        its impeccable morals
+        we have knotted ourselves
+        into and out of
+        holding on to life
+        holding still
+        with and without
+      
+      </p>
+    </div>
+
+    <div class="page">
+      <p class="text"><span class="bold-black-text">commerce raider</span>
+
+
+        attacking my wellbeing
+        looting all sense
+        to turn it into vegan merchandice
+        all kids brainwashed
+        uni’qlod in ever new shades
+        damn lucky
+        catching the big fish
+        no effort
+        surfing on all that was
+        stolen before
+
+
+
+
+
+
+
+
+        <span class="bold-black-text">die hohe treppe</span>
+
+
+        die hohe treppe
+        der aufzug für 6 personen
+        die türflügel wie ein kapitel
+        unten junges geflügel mit knöpfen
+        lungernd in den kellergärten
+        der reichen
+
+        alle twists sind schon formuliert
+        und schnell mit frischer performance
+        und schlichter anwesenheit
+        gefüllt
+
+        kaffee mit zahlencombis
+        während ramadan auch gern abends
+        gegenüber
+        die cousins
+      </p>
+    </div>
+
+    <div class="page">
+      <p class="text"><span class="bold-black-text">With contributions by</span>
+      
+
+        Ziyi Li
+        Jany Maus
+        Eghbal Joudi
+        Carlotta Wirtl
+        Noelle BuAbbud
+        Ruomeng Huang
+        Nastja Belousova
+        Nico Dasenbrock
+        Bubu Mosiashvili
+        Moosy Al Zubaidi
+        Marina Marcomini
+        Moira Meine Fuentes
+        Jashua Bustos Chumasero
+        Natascha Sadr Haghighian</p>
     </div>
 
     <div class="page">
@@ -430,7 +1189,7 @@
     </div>
 
     <div class="page">
-      <p class="text"></p>
+      <p class="text"><span class="bold-black-text"></span></p>
     </div>
 
 
